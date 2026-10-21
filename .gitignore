@@ -46,3 +46,9 @@ ENV/
 *.swp
 *.swo
 *~
+
+# ===========================
+# Artefatos gerados pelo src/train.py
+# ===========================
+tech-challenge-diabetes/reports/resultados.json
+tech-challenge-diabetes/reports/*.joblib

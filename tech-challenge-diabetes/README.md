@@ -11,7 +11,13 @@ Modelo de triagem que identifica pacientes com provável diabetes a partir de 21
 
 O grupo avaliou inicialmente um dataset de câncer de próstata, descartado por não conter sinal aprendível (ROC-AUC ≈ 0,5).
 
+## Vídeo de demonstração
+
+🎥 _Link do vídeo: (a incluir)_
+
 ## Como executar
+
+Todos os comandos abaixo partem desta pasta (`tech-challenge-diabetes/`).
 
 ### Com Docker
 
@@ -65,20 +71,27 @@ O modelo detectou 4.726 dos 5.265 diabéticos do teste. A precisão baixa é uma
 ## Estrutura do repositório
 
 ```
-├── data/                  # datasets
+tech-challenge-diabetes/
+├── data/
+│   ├── diabetes_012_health_indicators_BRFSS2015.csv   # dataset utilizado
+│   └── prostate_cancer_prediction.csv                 # dataset avaliado e descartado
 ├── notebooks/
-│   └── diabetes_diagnosis_final.ipynb
+│   └── diabetes_diagnosis_final.ipynb                 # análise completa, já executada
 ├── src/
+│   ├── __init__.py
 │   ├── config.py          # caminhos, colunas e constantes
 │   ├── preprocessing.py   # carga, limpeza, split e pré-processador
 │   ├── evaluate.py        # métricas, pontos de operação, subgrupos
 │   └── train.py           # pipeline completo pelo terminal
 ├── reports/
-│   └── figures/           # gráficos gerados pelo notebook
+│   └── figures/           # gráficos gerados pelo notebook (versionados)
 ├── requirements.txt
 ├── Dockerfile
+├── .dockerignore
 └── README.md
 ```
+
+As figuras em `reports/figures/` são regeneradas a cada execução do notebook. Os arquivos `reports/resultados.json` e `reports/modelo_final.joblib` são criados ao rodar `python -m src.train` e não são versionados.
 
 ## Equipe
 

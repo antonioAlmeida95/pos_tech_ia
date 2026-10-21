@@ -6,3 +6,4 @@ shap==0.53.0
 matplotlib==3.9.2
 seaborn==0.13.2
 jupyter==1.1.1
+joblib==1.6.0
