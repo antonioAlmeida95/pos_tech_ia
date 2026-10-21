@@ -1,0 +1,48 @@
+# ===========================
+# Arquivos de sistema do macOS
+# ===========================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Ícones
+Icon?
+
+# Miniaturas do Finder
+._*
+
+# Arquivos de rede/volume
+.Spotlight-V100
+.Trashes
+
+# ===========================
+# Jupyter Notebook
+# ===========================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ===========================
+# Python
+# ===========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+ENV/
+
+# ===========================
+# Editores / IDEs
+# ===========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
